@@ -11,6 +11,11 @@ public class CardDataBase : MonoBehaviour
     {
         // public Card(string Rank, string Suit, int Value ) this is the correct format 
 
+        cardList.Add(new Card("Ace", "Clubs", 1);
+        cardList.Add(new Card("Ace", "Dimonds", 1);
+        cardList.Add(new Card("Ace", "Hearts", 1);
+        cardList.Add(new Card("Ace", "Spades", 1);
+/*
         cardList.Add(new Card("Ace", "Clubs", 1, Resources.Load<Sprite>("ace_of_clubs"));
         cardList.Add(new Card("Ace", "Dimonds", 1, Resources.Load<Sprite>("ace_of_dimonds"));
         cardList.Add(new Card("Ace", "Hearts", 1, Resources.Load<Sprite>("ace_of_hearts"));
@@ -75,6 +80,7 @@ public class CardDataBase : MonoBehaviour
         cardList.Add(new Card("King", "Dimonds", 13, Resources.Load<Sprite>("king_of_dimonds")));
         cardList.Add(new Card("King", "Hearts", 13, Resources.Load<Sprite>("king_of_hearts")));
         cardList.Add(new Card("King", "Spades", 13, Resources.Load<Sprite>("king_of_spades")));
+/*
 
         // this is the wrong format 
         // cardList.Add(new Card(Suit.Clubs, Rank.Ace, Resources.Load<Sprite>("ace_of_clubs")));
@@ -82,6 +88,6 @@ public class CardDataBase : MonoBehaviour
         // cardList.Add(new Card(Suit.Hearts, Rank.Ace, Resources.Load<Sprite>("ace_of_hearts")));
         // cardList.Add(new Card(Suit.Spades, Rank.Ace, Resources.Load<Sprite>("ace_of_spades")));
 
-    }
+        }
 
 }
