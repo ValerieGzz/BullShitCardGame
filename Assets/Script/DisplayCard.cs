@@ -11,7 +11,11 @@ public class DisplayCard : MonoBehaviour
     public int displayValue; // The index of the card in CardDataBase.cardList
     public Image artImage;   // The UI Image component on your card object
 
-    private void Start()
+    public bool cardBack;
+    public static bool staticCardBack; 
+
+
+    void Start()
     {
         Debug.Log(CardDataBase.cardList.Count); 
 
@@ -30,7 +34,8 @@ public class DisplayCard : MonoBehaviour
             // 3. Assign the sprite directly to the UI Image component
             if (artImage != null && cardData.spriteImage != null)
             {
-                artImage.sprite = cardData.spriteImage;
+                artImage.sprite = cardData.spriteImage; 
+
             }
             else
             {
@@ -41,5 +46,11 @@ public class DisplayCard : MonoBehaviour
         {
             Debug.LogError($"Display Value ({displayValue}) is out of range!");
         }
+    }
+
+    void Update()
+    {
+        staticCardBack = cardBack; 
+
     }
 }

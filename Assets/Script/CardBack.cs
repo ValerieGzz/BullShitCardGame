@@ -1,0 +1,26 @@
+using UnityEngine; 
+using System.Collections;
+using System.Collections.Generic; 
+
+public class CardBack : MonoBehaviour
+{
+    public GameObject cardBack;
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        if(DisplayCard.staticCardBack == true)
+        {
+            cardBack.SetActive(true); 
+        }
+
+        else
+        {
+            cardBack.SetActive(false);
+        }
+    }
+}
