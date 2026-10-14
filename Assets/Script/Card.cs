@@ -10,17 +10,18 @@ public class Card
 {
     public string rank;
     public string suit;
-    public int value; 
+    public int value;
+    public Sprite spriteImage; 
 
     public Card()
     {
 
     }
-
-    public Card(string Rank, string Suit, int Value )
+    public Card(string Rank, string Suit, int Value, Sprite SpriteImage)
     {
         rank = Rank; 
         suit = Suit;
-        value = Value;  
+        value = Value;
+        spriteImage = SpriteImage; 
     }
 }
