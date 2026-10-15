@@ -34,8 +34,8 @@ public class DisplayCard : MonoBehaviour
             // 3. Assign the sprite directly to the UI Image component
             if (artImage != null && cardData.spriteImage != null)
             {
-                artImage.sprite = cardData.spriteImage; 
-
+                artImage.sprite = cardData.spriteImage;
+                ;
             }
             else
             {
